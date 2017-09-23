@@ -14,20 +14,10 @@ require 'pry'
   #   }
   # }
 
-# def remove_strawberry(contacts)
-#   contacts.each do |x, y|
-#     y.each do |a, b|
-#       b.delete("strawberry")
-#     end
-#   end
-# end
-
 def remove_strawberry(contacts)
   contacts.each do |x, y|
     y.each do |a, b|
-      if a == :favorite_ice_cream_flavors
-        b.delete_if {|c| c == "strawberry"}
-      end
+      b.delete("strawberry")
     end
   end
 end
